@@ -1,0 +1,154 @@
+*******************************
+Residencia Tres Olivos
+*******************************
+Factura nº: 1000001
+------------------------------------
+Año: 2022
+Mes: 3
+Tipo de habitación: N
+Precio habitación: 100.0
+Precio desayuno: 0.0
+Precio cena: 200.0
+Importe sin Iva: 300.0
+Iva: 60.0
+------------------------------------
+Importe con Iva: 360.0
+*******************************
+3 - 2
+
+
+Hasta el momento ...
+Total recaudado: 360.0
+Habitaciones totales: 1
+Alquileres verano: 0
+Pases piscina: 0
+
+
+*******************************
+Residencia Tres Olivos
+*******************************
+Factura nº: 1000002
+------------------------------------
+Año: 2022
+Mes: 7
+Tipo de habitación: E
+Precio habitación: 300.0
+Precio desayuno: 100.0
+Precio cena: 200.0
+Importe sin Iva: 600.0
+Descuento verano: 120.0
+Iva: 96.0
+------------------------------------
+Importe con Iva: 576.0
+*******************************
+5 - 3
+
+
+Hasta el momento ...
+Total recaudado: 936.0
+Habitaciones totales: 2
+Alquileres verano: 1
+Pases piscina: 0
+
+
+*******************************
+Residencia Tres Olivos
+*******************************
+Factura nº: 1000003
+------------------------------------
+Año: 2022
+Mes: 6
+Tipo de habitación: E
+Precio habitación: 300.0
+Precio desayuno: 100.0
+Precio cena: 200.0
+Importe sin Iva: 600.0
+Iva: 120.0
+------------------------------------
+Importe con Iva: 720.0
+*******************************
+PREMIO: Pase piscina 1 día.
+
+
+Hasta el momento ...
+Total recaudado: 1656.0
+Habitaciones totales: 3
+Alquileres verano: 1
+Pases piscina: 1
+
+
+*******************************
+Residencia Tres Olivos
+*******************************
+Factura nº: 1000004
+------------------------------------
+Año: 2021
+Mes: 12
+Tipo de habitación: D
+Precio habitación: 150.0
+Precio desayuno: 100.0
+Precio cena: 200.0
+Importe sin Iva: 450.0
+Iva: 90.0
+------------------------------------
+Importe con Iva: 540.0
+*******************************
+5 - 0
+
+
+Hasta el momento ...
+Total recaudado: 2196.0
+Habitaciones totales: 4
+Alquileres verano: 1
+Pases piscina: 1
+
+
+*******************************
+Residencia Tres Olivos
+*******************************
+Factura nº: 1000005
+------------------------------------
+Año: 2022
+Mes: 8
+Tipo de habitación: E
+Precio habitación: 300.0
+Precio desayuno: 0.0
+Precio cena: 0.0
+Importe sin Iva: 300.0
+Iva: 60.0
+------------------------------------
+Importe con Iva: 360.0
+*******************************
+3 - 6
+
+
+Hasta el momento ...
+Total recaudado: 2556.0
+Habitaciones totales: 5
+Alquileres verano: 2
+Pases piscina: 1
+
+
+*******************************
+Residencia Tres Olivos
+*******************************
+Año: 2022
+Mes: 7
+Tipo de habitación: D
+------------------------------------
+NO DISPONIBLE
+*******************************
+
+
+*******************************
+Residencia Tres Olivos
+*******************************
+Año: 2022
+Mes: 8
+Tipo de habitación: N
+------------------------------------
+NO DISPONIBLE
+*******************************
+
+
+Tipo de habitación más alquilada: E
