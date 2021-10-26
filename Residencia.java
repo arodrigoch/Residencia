@@ -122,7 +122,7 @@ public class Residencia
         if ( ((mes==7) || (mes==8)) && (tipo!='E') )
         {
             ticket = 
-			"*******************************\n" + 
+            "*******************************\n" + 
             "Residencia " + nombre + "\n" + 
             "*******************************\n" + 
             "Año: " + ano + "\n" + 
@@ -131,7 +131,7 @@ public class Residencia
             "------------------------------------\n" + 
             "NO DISPONIBLE\n" + 
             "*******************************\n\n";
-			System.out.println(ticket);
+            System.out.println(ticket);
             return;
         }
         
@@ -174,13 +174,16 @@ public class Residencia
 
         centenas = ((int)importeConIva / 100)%10;
         sorteo = (int)(Math.random()*10);
-        if (centenas == sorteo) pasesPiscina++; 
+        if (centenas == sorteo)
+	{
+		pasesPiscina++;
+	}
         
         // impresión del ticket
-		ticket = 
-		"*******************************\n" + 
-		"Residencia " + nombre + "\n" + 
-		"*******************************\n" + 
+        ticket = 
+        "*******************************\n" + 
+        "Residencia " + nombre + "\n" + 
+        "*******************************\n" + 
         "Factura nº: " + numeroFactura + "\n" + 
         "------------------------------------\n" + 
         "Año: " + ano + "\n" + 
@@ -191,26 +194,26 @@ public class Residencia
         "Precio cena: " + precioCena + "\n" + 
         "Importe sin Iva: " + importeSinIva + "\n";
         if (descuentoVerano > 0)
-		{
-			ticket += "Descuento verano: " + descuentoVerano + "\n";
-		}
+	{
+		ticket += "Descuento verano: " + descuentoVerano + "\n";
+	}
         ticket += 
-		"Iva: " + iva + "\n" + 
+	"Iva: " + iva + "\n" + 
         "------------------------------------\n" + 
         "Importe con Iva: " + importeConIva + "\n" + 
         "*******************************\n";
         if (centenas == sorteo)         
-		{
-			ticket += "PREMIO: Pase piscina 1 día.\n\n";
-		}
+	{
+		ticket += "PREMIO: Pase piscina 1 día.\n\n";
+	}
         else
-		{
-			ticket += centenas + " - " + sorteo + "\n\n";
-		}        
+	{
+		ticket += centenas + " - " + sorteo + "\n\n";
+	}        
         System.out.println(ticket);
         // impresión estadísticas        
         ticket = 
-		"Hasta el momento ...\n" + 
+	"Hasta el momento ...\n" + 
         "Total recaudado: " + totalRecaudado + "\n" + 
         "Habitaciones totales: " + habitacionesTotales + "\n" + 
         "Alquileres verano: " + cantidadVerano + "\n" + 
