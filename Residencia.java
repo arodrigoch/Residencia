@@ -15,14 +15,35 @@
 public class Residencia
 {
     //TODO: definir constantes
-    
-    //TODO: declarar atributos 
-    
+    private final String DOBLE = "D";
+    private final String NORMAL = "N";
+    private final String ESPECIAL = "E";
+    private final double PRECIO_DOBLE = 150.0;
+    private final double PRECIO_NORMAL = 100.0;
+    private final double PRECIO_ESPECIAL = 300.0;
+    private final double PRECIO_DESAYUNO = 100.0;
+    private final double PRECIO_CENA = 200.0;
+    private final double IVA = 0.20;
+    private final double DESCUENTO_VERANO = 0.2;
+
+    //TODO: declarar atributos
+    private String nombre;
+    private int cantidadDobles;
+    private int cantidadNormales;
+    private int cantidadEspeciales;
+    private double totalFacturas;
+
+
     /**
      * Constructor - Inicializa adecuadamente todos los atributos
      */
-    public Residencia(String unNombre)
-    {
+    public Residencia(String unNombre) {
+        nombre = unNombre;
+        cantidadDobles = 0;
+        cantidadNormales = 0;
+        cantidadEspeciales = 0;
+        totalFacturas = 0.0;
+
         //TODO: metodo constructor, inicializa adecuadamente todos los atributos 
     }
 
@@ -30,13 +51,67 @@ public class Residencia
      *  Accesor para el nombre de la residencia
      */
         //TODO: accesor para el nombre de la residencia
-
     /**
      *  Mutador para el nombre de la residencia
      */
         //TODO: mutador para el nombre de la residencia
-    
-    
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void alquilarHabitacion(String tipoHabitacion, boolean desayuno, boolean cena, int anio, int mes){
+        switch (tipoHabitacion){
+            case DOBLE:
+                totalFacturas += PRECIO_DOBLE;
+                break;
+            case NORMAL:
+                totalFacturas += PRECIO_NORMAL;
+                break;
+            case ESPECIAL:
+                totalFacturas += PRECIO_ESPECIAL;
+                break;
+            default:
+                return;
+        }
+        if(desayuno = true){
+            totalFacturas += PRECIO_DESAYUNO;
+        }
+        if(cena = true){
+            totalFacturas += PRECIO_CENA;
+        }
+        switch (mes){
+            case 1:
+
+            case 2:
+
+            case 3:
+
+            case 4:
+
+            case 5:
+
+            case 6:
+
+            case 7:
+
+            case 8:
+
+            case 9:
+
+            case 10:
+
+            case 11:
+
+            case 12:
+
+            default:
+
+        }
+    }
     /**
      *  (leer detalladamente el enunciado del examen en papel)
      *  
