@@ -29,9 +29,11 @@ public class Residencia
     //TODO: declarar atributos
     private String nombre;
     private int cantidadDobles;
+    private int mes;
     private int cantidadNormales;
     private int cantidadEspeciales;
     private double totalFacturas;
+    private double getTotalFacturasIMP;
 
 
     /**
@@ -43,6 +45,7 @@ public class Residencia
         cantidadNormales = 0;
         cantidadEspeciales = 0;
         totalFacturas = 0.0;
+        mes = 0;
 
         //TODO: metodo constructor, inicializa adecuadamente todos los atributos 
     }
@@ -63,55 +66,7 @@ public class Residencia
         this.nombre = nombre;
     }
 
-    public void alquilarHabitacion(String tipoHabitacion, boolean desayuno, boolean cena, int anio, int mes){
-        switch (tipoHabitacion){
-            case DOBLE:
-                totalFacturas += PRECIO_DOBLE;
-                break;
-            case NORMAL:
-                totalFacturas += PRECIO_NORMAL;
-                break;
-            case ESPECIAL:
-                totalFacturas += PRECIO_ESPECIAL;
-                break;
-            default:
-                return;
-        }
-        if(desayuno = true){
-            totalFacturas += PRECIO_DESAYUNO;
-        }
-        if(cena = true){
-            totalFacturas += PRECIO_CENA;
-        }
-        switch (mes){
-            case 1:
 
-            case 2:
-
-            case 3:
-
-            case 4:
-
-            case 5:
-
-            case 6:
-
-            case 7:
-
-            case 8:
-
-            case 9:
-
-            case 10:
-
-            case 11:
-
-            case 12:
-
-            default:
-
-        }
-    }
     /**
      *  (leer detalladamente el enunciado del examen en papel)
      *  
@@ -148,13 +103,87 @@ public class Residencia
      *  
      *  Analiza con una sentencia switch el tipo de habitacion.
      */
-    public void alquilarHabitacion(char tipo, boolean desayuno, boolean cena, int ano, int mes)
-    {
+    public void alquilarHabitacion(String tipoHabitacion, boolean desayuno, boolean cena, int anio, int mes){
         //TODO: variables locales alquilarHabitacion
-        
-        //TODO: impresion ticket si no es el tipo de habitacion que se puede alquilar en verano alquilarHabitacion
-        
+
         //TODO: codigo metodo alquilarHabitacion
+        switch (tipoHabitacion){
+            case DOBLE:
+                totalFacturas += PRECIO_DOBLE;
+                break;
+            case NORMAL:
+                totalFacturas += PRECIO_NORMAL;
+                break;
+            case ESPECIAL:
+                totalFacturas += PRECIO_ESPECIAL;
+                break;
+            default:
+                return;
+        }
+        if(desayuno = true){
+            totalFacturas += PRECIO_DESAYUNO;
+        }
+        if(cena = true){
+            totalFacturas += PRECIO_CENA;
+        }
+        switch (mes){
+            case 1:
+                this.mes = 1;
+                break;
+            case 2:
+                this.mes = 2;
+                break;
+            case 3:
+                this.mes = 3;
+                break;
+            case 4:
+                this.mes = 4;
+                break;
+            case 5:
+                this.mes = 5;
+                break;
+            case 6:
+                this.mes = 6;
+                break;
+            case 7:
+                if (tipoHabitacion.equals(ESPECIAL)) {
+                    this.mes = 7;
+                }else{
+                    System.out.println("Durante los meses de verano solo se permiten habitaciones especiales, por favor vuelva a comenzar el proceso");
+                }
+                break;
+            case 8:
+                if (tipoHabitacion.equals(ESPECIAL)) {
+                    this.mes = 8;
+                }else{
+                    System.out.println("Durante los meses de verano solo se permiten habitaciones especiales, por favor vuelva a comenzar el proceso");
+                }
+                break;
+            case 9:
+                this.mes = 9;
+                break;
+            case 10:
+                this.mes = 10;
+                break;
+            case 11:
+                this.mes = 11;
+                break;
+            case 12:
+                this.mes = 12;
+                break;
+            default:
+                return;
+        }
+    }
+    public void calcularImporte(){
+
+        if(mes == 7-8){
+            totalFacturas = totalFacturas - (totalFacturas * DESCUENTO_VERANO);
+        }
+        totalFacturas = totalFacturas + (totalFacturas * IVA);
+    }
+
+        //TODO: impresion ticket si no es el tipo de habitacion que se puede alquilar en verano alquilarHabitacion
         
         //TODO: impresion del ticket alquilarHabitacion
         
